@@ -27,8 +27,7 @@ class appX {
       service {'$service':
         ensure => $ensure,
         enable => true,
-        
-       }
+      }
        
        common.yaml
        .............
