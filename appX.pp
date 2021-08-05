@@ -1,11 +1,12 @@
-init.pp -->
+init.pp
+...........
 class appX {
   contain appX1::config_file
   contain appX1::service
   }
   
   conifg_file
-  
+  ................
   class appX::config_file ($String $mypackage
   $String $ensure){
     package {'$mypackage':
@@ -28,6 +29,7 @@ class appX {
        }
        
        common.yaml
+       .............
        appX::config_file:mypackage: appX
        appX::config_file:ensure: 1.0
        appX::service::service: appX
