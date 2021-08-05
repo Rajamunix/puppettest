@@ -34,4 +34,4 @@ class appX {
        appX::config_file:mypackage: appX
        appX::config_file:version: 1.0
        appX::service::service: appX
-       appX::service::ensure: on
+       appX::service::ensure: running
