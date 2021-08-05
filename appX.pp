@@ -9,10 +9,10 @@ class appX {
   ................
   class appX::config_file (
      String $mypackage
-     String $ensure){
+     String $version){
     package {'$mypackage':
       name => '$mypackage',
-      ensure => $ensure,
+      ensure => $version,
       }
     file {'/etc/init.d/appX':
       ensure => present,
@@ -33,6 +33,6 @@ class appX {
        common.yaml
        .............
        appX::config_file:mypackage: appX
-       appX::config_file:ensure: 1.0
+       appX::config_file:version: 1.0
        appX::service::service: appX
        appX::service::ensure: on
